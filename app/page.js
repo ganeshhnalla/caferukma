@@ -1,101 +1,157 @@
 import Image from "next/image";
+import { BsInstagram } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="grid h-full w-full place-items-center bg-[#1D3428]">
+      <div className="">
+        <div className="flex p-4 pt-8 justify-center">
+          <Link href="#">
+            <button className="m-2 py-2 px-4 duration-300 text-sm text-[#BECFC5] border border-[#BECFC5] rounded-full hover:text-[#1D3F28] hover:bg-[#D0B208] hover:border-transparent hover:scale-110">
+              Home
+            </button>
+          </Link>
+          <Link href="https://www.zomato.com/ncr/cafe-rukma-surajpur-noida/menu">
+            <button className="m-2 py-2 px-4 duration-300 text-sm text-[#BECFC5] border border-[#BECFC5] rounded-full hover:text-[#1D3F28] hover:bg-[#D0B208] hover:border-transparent hover:scale-110">
+              Menu
+            </button>
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="p-8 pb-8 text-center">
+          <img
+            className="mx-auto"
+            src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/Rukma%20gold.png/:/rs=w:316,h:400,cg:true,m/cr=w:316,h:400/qt=q:95"
+            width={158}
+            height={200}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <p className="pt-4 pb-8 text-[#BECFC5]">
+            Join us for a meal to remember!
+          </p>
+          <Link href="tel:+918527478300">
+            <button className="m-2 py-2 px-4 duration-300 text-sm text-[#D0B208] border border-[#D0B208] rounded-full hover:text-[#1D3F28] hover:bg-[#D0B208] hover:scale-110">
+              Book a Table
+            </button>
+          </Link>
+          <Link href="https://goo.gl/maps/SBpJbqofZdWaooyM6">
+            <button className="m-2 py-2 px-4 duration-300 text-sm text-[#D0B208] border border-[#D0B208] rounded-full hover:text-[#1D3F28] hover:bg-[#D0B208] hover:scale-110">
+              Navigate
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div className="text-[#d9d9d9] text-md text-center mx-auto duration-500 w-1/2 border-t border-gray-200">
+        <p className="p-8">Updates</p>
+        <img
+          className="pb-12 mx-auto"
+          src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/WhatsApp%20Image%202023-01-25%20at%206.39.19%20PM.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:1160"
+          width={300}
+          height={400}
+        />
+      </div>
+      <div className="lg:w-4/6 flex flex-wrap p-4 mx-auto">
+        <div className="flex flex-wrap md:-m-2 -m-1">
+          <div className="flex flex-wrap w-1/2">
+            <div className="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                className="rounded-lg w-full object-cover h-full object-center block"
+                src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/72A5518B-0C3F-48EA-9283-8DA45FB3B7BF.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:1079"
+              />
+            </div>
+            <div className="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                className="rounded-lg w-full object-cover h-full object-center block"
+                src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/IMG_4375.jpg/:/rs=w:2560,h:1920"
+              />
+            </div>
+            <div className="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                className="rounded-lg w-full h-full object-cover object-center block"
+                src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/IMG_0673.jpg/:/rs=w:1280,h:1175"
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap w-1/2">
+            <div className="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                className="rounded-lg w-full h-full object-cover object-center block"
+                src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/IMG_0567.jpg/:/rs=w:1280,h:1227"
+              />
+            </div>
+            <div className="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                className="rounded-lg w-full object-cover h-full object-center block"
+                src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/IMG_0568.jpg/:/rs=w:2560,h:2243"
+              />
+            </div>
+            <div className="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                className="rounded-lg w-full object-cover h-full object-center block"
+                src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/IMG_0570.jpg/:/rs=w:1280,h:1227"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="py-4 mx-auto flex flex-col">
+          <div className="">
+            <div className="rounded-lg h-64 overflow-hidden">
+              <img
+                alt="content"
+                className="object-cover object-center h-full w-full"
+                src="https://img1.wsimg.com/isteam/ip/172f7869-27bb-48f8-8755-98f7297d50e3/IMG_6659-09b2f99.jpg/:/rs=w:2560,h:1920"
+              />
+            </div>
+            <div className="flex flex-col sm:flex-row mt-40">
+              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div className="flex flex-col items-center text-center justify-center">
+                  <h2 className="font-medium title-font mt-4 text-white text-lg">
+                    About Us
+                  </h2>
+                  <div className="w-12 h-1 bg-[#D0B208] rounded mt-2 mb-4"></div>
+                </div>
+              </div>
+              <div className="sm:w-2/3 sm:pl-8 sm:py-8 mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p className="leading-relaxed text-[#d9d9d9] text-md mb-4">
+                  <b>Rukma</b> is synonymous with new beginnings and a ray of
+                  light. The name was chosen to represent the deep-rooted story
+                  behind the inception of this cafe. It all starts with a shared
+                  passion of food between two best friends, One being a seasoned
+                  chef and one a visionary. Since the past 20 years or more they
+                  have been curating the growth of many community clubs and
+                  establishments. Both having diverse interests,Professionally,
+                  They always wanted to find a common ground to establish
+                  something new together, and it was food that brought upon the
+                  idea of finally having new beginnings together and giving the
+                  community a taste of what they feel is an undiscovered gold
+                  mine. Welcome to Rukma, A cafe at Jaypee greens, Greater
+                  Noida. We hope to make you a part of our family and give you
+                  the most home-style experience in a commercial environment.
+                  Let’s find that balance together. Love and light.
+                </p>
+              </div>
+            </div>
+            <div className="p-16 text-center text-3xl text-[#d9d9d9]">
+              <button className="px-4 hover:text-[#D0B208] duration-200 hover:scale-125">
+                <a href="https://www.instagram.com/caferukma/">
+                  <BsInstagram />
+                </a>
+              </button>
+            </div>
+          </div>
+          <div className="p-4 text-sm font-bold text-center">
+            <p className="p-4 text-[#d9d9d9]">CAFE RUKMA</p>
+            <p className="p-4 text-[#BECFC5]">
+              COPYRIGHT © 2023 CAFE RUKMA - ALL RIGHTS RESERVED.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
